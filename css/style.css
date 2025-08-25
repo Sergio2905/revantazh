@@ -3584,8 +3584,21 @@ body._lock {
     gap: calc(8px + 8 * (100vw - 320px) / 990);
   }
 
+  .review__status {
+    font-size: calc(0.875rem + 10 * (100vw - 20rem) / 990);
+  }
+
+  .review__status span {
+    font-size: calc(0.875rem + 6 * (100vw - 20rem) / 990);
+  }
+
+  .review__form {
+    margin-top: calc(24px + 26 * (100vw - 320px) / 990);
+  }
+
   .review__label {
     padding-left: calc(10px + 10 * (100vw - 320px) / 990);
+    font-size: calc(0.875rem + 6 * (100vw - 20rem) / 990);
   }
 
   .review__btn {
