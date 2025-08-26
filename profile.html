@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css?_v=20250825120430" />
+    <link rel="stylesheet" href="css/style.min.css?_v=20250826125132" />
     <title>РеВантаж</title>
 </head>
 
@@ -126,7 +126,7 @@
                     <li class="menu__item menu__item_desk">
                         <a href="#" class="menu__link">
                             <svg>
-                                <use href="img/icons/icons.svg#cart"></use>
+                                <use href="img/icons/icons.svg#home"></use>
                             </svg>
                         </a>
                     </li>
@@ -170,6 +170,16 @@
                     <li class="menu__item">
                         <div class="menu__row">
                             <a href="#" class="menu__link">Контакти</a>
+                        </div>
+                    </li>
+                    <li class="menu__item">
+                        <div class="menu__row">
+                            <a href="#" class="menu__link btn_red">Реставрація</a>
+                        </div>
+                    </li>
+                    <li class="menu__item">
+                        <div class="menu__row">
+                            <a href="#" class="menu__link btn_red">Купимо ваші деталі</a>
                         </div>
                     </li>
                 </ul>
@@ -305,8 +315,95 @@
             <section class="profile">
                 <div class="profile__container container">
                     <div class="profile__body">
-                        <div class="profile__block"></div>
-                        <div class="profile__block"></div>
+                        <div class="profile__header">
+                            <h2 class="profile__title title">Вітаємо, Іван!</h2>
+                            <button type="button" class="profile__exit">
+                                <span>Вийти</span>
+                                <picture><source srcset="img/icons/exit.webp" type="image/webp"><img src="img/icons/exit.png" alt="Exit"></picture>
+                            </button>
+                        </div>
+                        <h3 class="profile__subtitle">Ваші замовлення:</h3>
+                        <div class="profile__orders">
+                            <div class="profile__order">
+                                <div class="profile__number">
+                                    <b>№3652683</b> від 05.06.2025
+                                </div>
+                                <div class="profile__status">
+                                    <span>В обробці</span> 06.06.2025
+                                </div>
+                                <div class="profile__items">
+                                    <div class="profile__item">
+                                        <div class="profile__image">
+                                            <picture><source srcset="img/catalog/image.webp" type="image/webp"><img src="img/catalog/image.png" alt="Image"></picture>
+                                        </div>
+                                        <div class="profile__name">Котушка запалювання ЗІЛ 130</div>
+                                        <div class="profile__code">Код: 2016645</div>
+                                        <div class="profile__count">1 x 700 грн.</div>
+                                        <div class="profile__summ">700,00 грн</div>
+                                    </div>
+                                </div>
+                                <button type="button" class="profile__more">
+                                    <svg>
+                                        <use href="img/icons/icons.svg#arrow2"></use>
+                                    </svg>
+                                </button>
+                                <div class="profile__delivery">
+                                    Самовивіз з Нової Пошти
+                                    TTH: 20400461544219
+                                    Адреса доставки:
+                                    Київ, 10, вул. Соборна, б.1
+                                    Отримувач:
+                                    Кіло Іван Дмитрович
+                                </div>
+                                <div class="profile__details">
+                                    <ul>
+                                        <li>Оплата: Оплата картою Visa/MasterCard</li>
+                                        <li>Статус оплати: Сплачено</li>
+                                        <li>Доставка: За тарифами оператора</li>
+                                    </ul>
+                                </div>
+                                <button type="button" class="profile__btn btn_red" data-modal="review">
+                                    Залишити відгук
+                                </button>
+                                <div class="profile__total">Всього: 700,00 грн</div>
+                            </div>
+                        </div>
+                        <h3 class="profile__subtitle">ОСОБИСТІ Дані:</h3>
+                        <form action="#" class="profile__form order__form">
+                            <div class="order__section">
+                                <span class="order__label">Прізвище, Ім’я, По-батькові</span>
+                                <div class="order__input">
+                                    <input type="text" name="user-name" value="Кіло Іван Дмитрович">
+                                    <div class="order__icon">
+                                        <svg>
+                                            <use href="img/icons/icons.svg#edit"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order__section">
+                                <span class="order__label">Телефон</span>
+                                <div class="order__input">
+                                    <input type="text" name="user-phone" value="+38 (095) 757-57-50">
+                                    <div class="order__icon">
+                                        <svg>
+                                            <use href="img/icons/icons.svg#edit"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order__section">
+                                <span class="order__label">E-mail</span>
+                                <div class="order__input">
+                                    <input type="text" name="user-email" value="kiloid@gmail.com">
+                                    <div class="order__icon">
+                                        <svg>
+                                            <use href="img/icons/icons.svg#edit"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </section>
@@ -527,6 +624,146 @@
         </div>
     </div>
 </footer>
+
+<div class="panel">
+    <nav class="panel__body">
+        <ul class="panel__list">
+            <li class="panel__item">
+                <a href="./" class="panel__link">
+                    <svg>
+                        <use href="img/icons/icons.svg#home"></use>
+                    </svg>
+                    Домашня
+                </a>
+            </li>
+            <li class="panel__item">
+                <a href="#catalog" class="panel__link">
+                    <svg>
+                        <use href="img/icons/icons.svg#catalog"></use>
+                    </svg>
+                    Каталог
+                </a>
+            </li>
+            <li class="panel__item">
+                <a href="#" class="panel__link" data-modal="cart">
+                    <svg>
+                        <use href="img/icons/icons.svg#cart"></use>
+                    </svg>
+                    Кошик
+                </a>
+            </li>
+            <li class="panel__item">
+                <a href="./profile.html" class="panel__link">
+                    <svg>
+                        <use href="img/icons/icons.svg#user"></use>
+                    </svg>
+                    Профіль
+                </a>
+            </li>
+            <li class="panel__item">
+                <a href="#extra" class="panel__link">
+                    <svg>
+                        <use href="img/icons/icons.svg#drop"></use>
+                    </svg>
+                    Більше
+                </a>
+            </li>
+        </ul>
+        <div class="panel__extra extra" id="extra">
+            <ul class="extra__list">
+                <li class="extra__item">
+                    <a href="#" class="extra__link extra__link_red">Купимо ваші деталі</a>
+                </li>
+                <li class="extra__item">
+                    <a href="#" class="extra__link extra__link_red">Реставрація</a>
+                </li>
+                <li class="extra__item">
+                    <a href="#" class="extra__link">Доставка та оплата</a>
+                </li>
+                <li class="extra__item">
+                    <a href="#" class="extra__link">Про нас</a>
+                </li>
+                <li class="extra__item">
+                    <a href="#" class="extra__link">Відгуки</a>
+                </li>
+                <li class="extra__item">
+                    <a href="#" class="extra__link">Контакти</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <nav class="panel__submenu" id="catalog">
+        <div class="panel__header">
+            <h3 class="panel__title">Каталог товарів</h3>
+            <button type="button" class="panel__close" title="Close menu"></button>
+        </div>
+        <ul class="panel__sublist">
+            <li class="panel__subitem">
+                <a href="#" class="panel__sublink">
+                    <img src="img/menu/engine.svg" alt="Image">
+                    Двигун та комплектуючі
+                </a>
+                <div class="panel__submenu">
+                    <div class="panel__header">
+                        <button type="button" class="panel__back">
+                            <svg>
+                                <use href="img/icons/icons.svg#arrow4"></use>
+                            </svg>
+                        </button>
+                        <h3 class="panel__title">Каталог товарів</h3>
+                        <button type="button" class="panel__close" title="Close menu"></button>
+                    </div>
+                    <ul class="panel__sublist">
+                        <li class="panel__subitem">
+                            <a href="#" class="panel__sublink">
+                                <img src="img/menu/engine.svg" alt="Image">
+                                Двигун та комплектуючі
+                            </a>
+                        </li>
+                        <li class="panel__subitem">
+                            <a href="#" class="panel__sublink">
+                                Головки блоку циліндрів
+                            </a>
+                        </li>
+                        <li class="panel__subitem">
+                            <a href="#" class="panel__sublink">
+                                Головки блоку циліндрів
+                            </a>
+                        </li>
+                        <li class="panel__subitem">
+                            <a href="#" class="panel__sublink">
+                                Головки блоку циліндрів
+                            </a>
+                        </li>
+                        <li class="panel__subitem">
+                            <a href="#" class="panel__sublink">
+                                Головки блоку циліндрів
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="panel__subitem">
+                <a href="#" class="panel__sublink">
+                    <img src="img/menu/engine.svg" alt="Image">
+                    Двигун та комплектуючі
+                </a>
+            </li>
+            <li class="panel__subitem">
+                <a href="#" class="panel__sublink">
+                    <img src="img/menu/engine.svg" alt="Image">
+                    Двигун та комплектуючі
+                </a>
+            </li>
+            <li class="panel__subitem">
+                <a href="#" class="panel__sublink">
+                    <img src="img/menu/engine.svg" alt="Image">
+                    Двигун та комплектуючі
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>
     </div>
 
     <div class="modal" id="cart">
@@ -798,7 +1035,7 @@
     </div>
 </div>
 
-    <script src="js/app.min.js?_v=20250825120430"></script>
+    <script src="js/app.min.js?_v=20250826125132"></script>
 </body>
 
 </html>

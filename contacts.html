@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css?_v=20250825120430" />
+    <link rel="stylesheet" href="css/style.min.css?_v=20250826125132" />
     <title>РеВантаж</title>
 </head>
 
@@ -126,7 +126,7 @@
                     <li class="menu__item menu__item_desk">
                         <a href="#" class="menu__link">
                             <svg>
-                                <use href="img/icons/icons.svg#cart"></use>
+                                <use href="img/icons/icons.svg#home"></use>
                             </svg>
                         </a>
                     </li>
@@ -170,6 +170,16 @@
                     <li class="menu__item">
                         <div class="menu__row">
                             <a href="#" class="menu__link">Контакти</a>
+                        </div>
+                    </li>
+                    <li class="menu__item">
+                        <div class="menu__row">
+                            <a href="#" class="menu__link btn_red">Реставрація</a>
+                        </div>
+                    </li>
+                    <li class="menu__item">
+                        <div class="menu__row">
+                            <a href="#" class="menu__link btn_red">Купимо ваші деталі</a>
                         </div>
                     </li>
                 </ul>
@@ -311,7 +321,7 @@
                                 <h3 class="contacts__subtitle">Адреса:</h3>
                                 <div class="contacts__info">
                                     <svg>
-                                        <use href="img/icons/icons.svg#instagram"></use>
+                                        <use href="img/icons/icons.svg#location"></use>
                                     </svg>
                                     <span>с.Мачухи, Полтава, Україна</span>
                                 </div>
@@ -320,7 +330,7 @@
                                 <h3 class="contacts__subtitle">Контактна особа:</h3>
                                 <div class="contacts__info">
                                     <svg>
-                                        <use href="img/icons/icons.svg#instagram"></use>
+                                        <use href="img/icons/icons.svg#user2"></use>
                                     </svg>
                                     <span>Дмитро</span>
                                 </div>
@@ -329,7 +339,7 @@
                                 <h3 class="contacts__subtitle">Телефон:</h3>
                                 <div class="contacts__info">
                                     <svg>
-                                        <use href="img/icons/icons.svg#instagram"></use>
+                                        <use href="img/icons/icons.svg#call"></use>
                                     </svg>
                                     <div class="contacts__phones">
                                         <a href="tel:" class="contacts__phone" target="_blank">050 078 11 58</a>
@@ -341,7 +351,7 @@
                                 <h3 class="contacts__subtitle">E-mail:</h3>
                                 <div class="contacts__info">
                                     <svg>
-                                        <use href="img/icons/icons.svg#instagram"></use>
+                                        <use href="img/icons/icons.svg#email"></use>
                                     </svg>
                                     <a class="contacts__link" href="mailto:d.akula2000@gmail.com"
                                         target="_blank">d.akula2000@gmail.com</a>
@@ -383,7 +393,7 @@
                                 <h3 class="contacts__subtitle">Графік роботи:</h3>
                                 <div class="contacts__info">
                                     <svg>
-                                        <use href="img/icons/icons.svg#instagram"></use>
+                                        <use href="img/icons/icons.svg#time"></use>
                                     </svg>
                                     <span>
                                         Понеділок – Субота: 08:00 – 18:00
@@ -612,6 +622,146 @@
         </div>
     </div>
 </footer>
+
+<div class="panel">
+    <nav class="panel__body">
+        <ul class="panel__list">
+            <li class="panel__item">
+                <a href="./" class="panel__link">
+                    <svg>
+                        <use href="img/icons/icons.svg#home"></use>
+                    </svg>
+                    Домашня
+                </a>
+            </li>
+            <li class="panel__item">
+                <a href="#catalog" class="panel__link">
+                    <svg>
+                        <use href="img/icons/icons.svg#catalog"></use>
+                    </svg>
+                    Каталог
+                </a>
+            </li>
+            <li class="panel__item">
+                <a href="#" class="panel__link" data-modal="cart">
+                    <svg>
+                        <use href="img/icons/icons.svg#cart"></use>
+                    </svg>
+                    Кошик
+                </a>
+            </li>
+            <li class="panel__item">
+                <a href="./profile.html" class="panel__link">
+                    <svg>
+                        <use href="img/icons/icons.svg#user"></use>
+                    </svg>
+                    Профіль
+                </a>
+            </li>
+            <li class="panel__item">
+                <a href="#extra" class="panel__link">
+                    <svg>
+                        <use href="img/icons/icons.svg#drop"></use>
+                    </svg>
+                    Більше
+                </a>
+            </li>
+        </ul>
+        <div class="panel__extra extra" id="extra">
+            <ul class="extra__list">
+                <li class="extra__item">
+                    <a href="#" class="extra__link extra__link_red">Купимо ваші деталі</a>
+                </li>
+                <li class="extra__item">
+                    <a href="#" class="extra__link extra__link_red">Реставрація</a>
+                </li>
+                <li class="extra__item">
+                    <a href="#" class="extra__link">Доставка та оплата</a>
+                </li>
+                <li class="extra__item">
+                    <a href="#" class="extra__link">Про нас</a>
+                </li>
+                <li class="extra__item">
+                    <a href="#" class="extra__link">Відгуки</a>
+                </li>
+                <li class="extra__item">
+                    <a href="#" class="extra__link">Контакти</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <nav class="panel__submenu" id="catalog">
+        <div class="panel__header">
+            <h3 class="panel__title">Каталог товарів</h3>
+            <button type="button" class="panel__close" title="Close menu"></button>
+        </div>
+        <ul class="panel__sublist">
+            <li class="panel__subitem">
+                <a href="#" class="panel__sublink">
+                    <img src="img/menu/engine.svg" alt="Image">
+                    Двигун та комплектуючі
+                </a>
+                <div class="panel__submenu">
+                    <div class="panel__header">
+                        <button type="button" class="panel__back">
+                            <svg>
+                                <use href="img/icons/icons.svg#arrow4"></use>
+                            </svg>
+                        </button>
+                        <h3 class="panel__title">Каталог товарів</h3>
+                        <button type="button" class="panel__close" title="Close menu"></button>
+                    </div>
+                    <ul class="panel__sublist">
+                        <li class="panel__subitem">
+                            <a href="#" class="panel__sublink">
+                                <img src="img/menu/engine.svg" alt="Image">
+                                Двигун та комплектуючі
+                            </a>
+                        </li>
+                        <li class="panel__subitem">
+                            <a href="#" class="panel__sublink">
+                                Головки блоку циліндрів
+                            </a>
+                        </li>
+                        <li class="panel__subitem">
+                            <a href="#" class="panel__sublink">
+                                Головки блоку циліндрів
+                            </a>
+                        </li>
+                        <li class="panel__subitem">
+                            <a href="#" class="panel__sublink">
+                                Головки блоку циліндрів
+                            </a>
+                        </li>
+                        <li class="panel__subitem">
+                            <a href="#" class="panel__sublink">
+                                Головки блоку циліндрів
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="panel__subitem">
+                <a href="#" class="panel__sublink">
+                    <img src="img/menu/engine.svg" alt="Image">
+                    Двигун та комплектуючі
+                </a>
+            </li>
+            <li class="panel__subitem">
+                <a href="#" class="panel__sublink">
+                    <img src="img/menu/engine.svg" alt="Image">
+                    Двигун та комплектуючі
+                </a>
+            </li>
+            <li class="panel__subitem">
+                <a href="#" class="panel__sublink">
+                    <img src="img/menu/engine.svg" alt="Image">
+                    Двигун та комплектуючі
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>
     </div>
 
     <div class="modal" id="cart">
@@ -883,7 +1033,7 @@
     </div>
 </div>
 
-    <script src="js/app.min.js?_v=20250825120430"></script>
+    <script src="js/app.min.js?_v=20250826125132"></script>
 </body>
 
 </html>
